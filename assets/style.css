@@ -99,16 +99,19 @@ header {
 	background-image: url("./header.png");
 	background-color: black;
 	background-size: 100% 100%;
+	padding-left: 2ch;
+	padding-right: 2ch;
+	padding-top: 3ch;
+	padding-bottom: 3ch;
 }
 
 header h1 {
 	color: white;
 	font-size: 125%;
 	font-weight: 700;
-	padding-left: 3ch;
-	padding-right: 3ch;
-	padding-top: 3ex;
-	padding-bottom: 3ex;
+	text-shadow: 1px 1px 0 black,
+			1px 1px 2px black,
+			1px 1px 3px black;
 }
 
 a {
@@ -141,18 +144,16 @@ article {
 
 article h1 {
 	font-weight: 700;
-	margin-top: 4ex;
-	margin-bottom: 0.5ex;
+	font-style: oblique;
+	margin-top: 2ex;
+	margin-bottom: 2ex;
 	border-bottom: 0.3ex solid black;
-	padding-top: 0.2ex;
-	padding-bottom: 0.5ex;
 }
 
 article h2 {
-	font-weight: 700;
-	font-style: oblique;
-	margin-top: 4ex;
-	margin-bottom: 1ex;
+	font-weight: 500;
+	margin-top: 2ex;
+	margin-bottom: 2ex;
 }
 
 article p {
