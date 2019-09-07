@@ -82,6 +82,10 @@
 	text-shadow: none;
 }
 
+html {
+	background-color: #dddddd;
+}
+
 body {
 	background-color: white;
 	color: black;
@@ -93,9 +97,11 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 0px;
-	padding-bottom: 2.5ex;
+	padding-bottom: 2ex;
 	padding-left: 2ch;
 	padding-right: 2ch;
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
 }
 
 header {
