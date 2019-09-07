@@ -102,23 +102,16 @@ header {
 	background-image: url("./header.png");
 	background-color: black;
 	background-size: 100% 100%;
-	border-bottom-left-radius: 0.3ex;
-	border-bottom-right-radius: 0.3ex;
 }
 
 header h1 {
 	color: white;
 	font-size: 125%;
 	font-weight: 700;
-	padding-left: 2ch;
-	padding-right: 2ch;
+	padding-left: 3ch;
+	padding-right: 3ch;
 	padding-top: 3ex;
 	padding-bottom: 3ex;
-	text-shadow: 0ex 0ex 1ex black,
-			0.1ex 0.1ex 0.5ex black,
-			0.1ex 0.1ex 0.5ex black,
-			0.25ex 0.25ex 1ex black,
-			0.25ex 0.25ex 1ex black;
 }
 
 article {
@@ -132,17 +125,12 @@ article {
 }
 
 article h1 {
-	font-size: 125%;
 	font-weight: 700;
 	margin-top: 4ex;
 	margin-bottom: 0.5ex;
-	background-color: black;
-	color: white;
-	padding-top: 0.5ex;
+	border-bottom: 0.3ex solid black;
+	padding-top: 0.2ex;
 	padding-bottom: 0.5ex;
-	padding-left: 0.5ex;
-	padding-right: 0.5ex;
-	border-radius: 0.3ex;
 }
 
 article h2 {
@@ -185,21 +173,15 @@ article ul li span {
 	margin-left: 1ch;
 }
 
-article a {
+article a, footer a {
 	color: blue;
 }
 
-article a:after {
-	content: "\279A";
-	width: 1ch;
-	display: inline-block;
-}
-
-article a:active {
+article a:active, footer a:active {
 	text-decoration: underline;
 }
 
-article a:hover {
+article a:hover, footer a:hover {
 	background-color: blue;
 	color: white;
 	text-decoration: underline;
@@ -207,20 +189,13 @@ article a:hover {
 
 .logo {
 	display: inline-block;
-	border-radius: 0.3ex;
 	width: 20ch;
 	height: 20ch;
-	background-color: #dddddd;
-	padding: 1ex;
 	text-align: center;
 	vertical-align: text-top;
-	margin: 1px;
-}
-
-.logo:hover {
-	border: 1px solid blue;
-	margin: 0px;
-	background-color: white;
+	padding: 1ex;
+	margin: 1ex;
+	color: black;
 }
 
 .logo figcaption {
@@ -232,6 +207,8 @@ article a:hover {
 	display: inline-block;
 	width: 8ch;
 	height: 8ch;
+	background-color: white;
+	padding: 1ex;
 }
 
 footer {
