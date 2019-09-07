@@ -1,0 +1,238 @@
+@font-face {
+	font-family: webmono;
+	src: url("fonts/RobotoMono-Thin.ttf");
+	font-weight: 100;
+}
+
+@font-face {
+	font-family: webmono;
+	src: url("fonts/RobotoMono-ThinItalic.ttf");
+	font-weight: 100;
+	font-style: oblique;
+}
+
+@font-face {
+	font-family: webmono;
+	src: url("fonts/RobotoMono-Light.ttf");
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: webmono;
+	src: url("fonts/RobotoMono-LightItalic.ttf");
+	font-weight: 300;
+	font-style: oblique;
+}
+
+@font-face {
+	font-family: webmono;
+	src: url("fonts/RobotoMono-Regular.ttf");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: webmono;
+	src: url("fonts/RobotoMono-RegularItalic.ttf");
+	font-weight: 400;
+	font-style: oblique;
+}
+
+@font-face {
+	font-family: webmono;
+	src: url("fonts/RobotoMono-Medium.ttf");
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: webmono;
+	src: url("fonts/RobotoMono-MediumItalic.ttf");
+	font-weight: 500;
+	font-style: oblique;
+}
+
+@font-face {
+	font-family: webmono;
+	src: url("fonts/RobotoMono-Bold.ttf");
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: webmono;
+	src: url("fonts/RobotoMono-BoldItalic.ttf");
+	font-weight: 700;
+	font-style: oblique;
+}
+
+* {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	text-decoration: inherit;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	background: none;
+	color: inherit;
+	outline: none;
+}
+
+:focus {
+	text-decoration: underline;
+	text-shadow: none;
+}
+
+body {
+	background-color: white;
+	color: black;
+	font-family: webmono;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 2ex;
+	width: 96ch;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 0px;
+	padding-bottom: 2.5ex;
+	padding-left: 2ch;
+	padding-right: 2ch;
+}
+
+header {
+	background-image: url("./header.png");
+	background-color: black;
+	background-size: 100% 100%;
+	border-bottom-left-radius: 0.3ex;
+	border-bottom-right-radius: 0.3ex;
+}
+
+header h1 {
+	color: white;
+	font-size: 125%;
+	font-weight: 700;
+	padding-left: 2ch;
+	padding-right: 2ch;
+	padding-top: 3ex;
+	padding-bottom: 3ex;
+	text-shadow: 0ex 0ex 1ex black,
+			0.1ex 0.1ex 0.5ex black,
+			0.1ex 0.1ex 0.5ex black,
+			0.25ex 0.25ex 1ex black,
+			0.25ex 0.25ex 1ex black;
+}
+
+article {
+	display: block;
+	border-bottom-color: black;
+	border-bottom-style: dashed;
+	border-bottom-width: 0.1ex;
+	margin-bottom: 2ex;
+	padding-bottom: 4ex;
+	line-height: 150%;
+}
+
+article h1 {
+	font-size: 125%;
+	font-weight: 700;
+	margin-top: 4ex;
+	margin-bottom: 0.5ex;
+	background-color: black;
+	color: white;
+	padding-top: 0.5ex;
+	padding-bottom: 0.5ex;
+	padding-left: 0.5ex;
+	padding-right: 0.5ex;
+	border-radius: 0.3ex;
+}
+
+article h2 {
+	font-weight: 700;
+	font-style: oblique;
+	margin-top: 4ex;
+	margin-bottom: 1ex;
+}
+
+article p {
+	font-weight: 300;
+	margin-bottom: 1ex;
+}
+
+article u {
+	text-decoration: underline;
+}
+
+article b {
+	font-weight: bolder;
+}
+
+article ul {
+	list-style: none;
+	padding-left: 2ch;
+	margin-bottom: 2.5ex;
+}
+
+article ul li {
+	text-indent: -2ch;
+}
+
+article ul li:before {
+	content: "- ";
+	font-weight: 500;
+}
+
+article ul li span {
+	color: gray;
+	margin-left: 1ch;
+}
+
+article a {
+	color: blue;
+}
+
+article a:after {
+	content: "\279A";
+	width: 1ch;
+	display: inline-block;
+}
+
+article a:active {
+	text-decoration: underline;
+}
+
+article a:hover {
+	background-color: blue;
+	color: white;
+	text-decoration: underline;
+}
+
+.logo {
+	display: inline-block;
+	border-radius: 0.3ex;
+	width: 20ch;
+	height: 20ch;
+	background-color: #dddddd;
+	padding: 1ex;
+	text-align: center;
+	vertical-align: text-top;
+	margin: 1px;
+}
+
+.logo:hover {
+	border: 1px solid blue;
+	margin: 0px;
+	background-color: white;
+}
+
+.logo figcaption {
+	display: block;
+	height: 10ch;
+}
+
+.logo img {
+	display: inline-block;
+	width: 8ch;
+	height: 8ch;
+}
+
+footer {
+}
