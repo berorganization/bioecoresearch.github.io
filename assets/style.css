@@ -83,7 +83,7 @@ html {
 	font-family: webmono;
 	font-weight: 400;
 	font-size: 12pt;
-	line-height: 2ex;
+	line-height: 150%;
 }
 
 body {
@@ -130,13 +130,11 @@ a:focus {
 }
 
 article {
-	display: block;
 	border-bottom-color: black;
 	border-bottom-style: dashed;
 	border-bottom-width: 0.1ex;
 	margin-bottom: 2ex;
-	padding-bottom: 4ex;
-	line-height: 3ex;
+	padding-bottom: 2ex;
 	padding-left: 2ch;
 	padding-right: 2ch;
 }
@@ -172,8 +170,8 @@ article b {
 
 article ul {
 	list-style: none;
-	padding-left: 2ch;
-	margin-bottom: 2.5ex;
+	padding-left: 2ex;
+	margin-bottom: 2ex;
 }
 
 article ul li {
@@ -194,29 +192,7 @@ article ul li span {
 	text-align: center;
 }
 
-#logos a {
-	display: inline-block;
-	width: 18ch;
-	height: 18ch;
-	text-align: center;
-	vertical-align: text-top;
-	padding: 1ex;
-	margin: 0;
-}
-
-#logos li:before {
-	content: none;
-}
-
-#logos figcaption {
-	display: block;
-	height: 10ch;
-}
-
-#logos img {
-	display: inline-block;
-	width: 8ch;
-	height: 8ch;
-	background-color: white;
-	padding: 1ex;
+footer {
+	padding-left: 2ch;
+	padding-right: 2ch;
 }
