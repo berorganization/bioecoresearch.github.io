@@ -77,31 +77,22 @@
 	outline: none;
 }
 
-:focus {
-	text-decoration: underline;
-	text-shadow: none;
-}
-
 html {
-	background-color: #dddddd;
+	background-color: #efefef;
+	color: black;
+	font-family: webmono;
+	font-weight: 400;
+	font-size: 12pt;
+	line-height: 2ex;
 }
 
 body {
 	background-color: white;
-	color: black;
-	font-family: webmono;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 2ex;
 	width: 96ch;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 0px;
 	padding-bottom: 2ex;
-	padding-left: 2ch;
-	padding-right: 2ch;
-	border-left: 1px solid #cccccc;
-	border-right: 1px solid #cccccc;
 }
 
 header {
@@ -120,6 +111,24 @@ header h1 {
 	padding-bottom: 3ex;
 }
 
+a {
+	color: blue;
+}
+
+a:active {
+	text-decoration: underline;
+}
+
+a:hover {
+	background-color: blue;
+	color: white;
+	text-decoration: underline;
+}
+
+a:focus {
+	text-decoration: underline;
+}
+
 article {
 	display: block;
 	border-bottom-color: black;
@@ -127,7 +136,9 @@ article {
 	border-bottom-width: 0.1ex;
 	margin-bottom: 2ex;
 	padding-bottom: 4ex;
-	line-height: 150%;
+	line-height: 3ex;
+	padding-left: 2ch;
+	padding-right: 2ch;
 }
 
 article h1 {
@@ -179,43 +190,33 @@ article ul li span {
 	margin-left: 1ch;
 }
 
-article a, footer a {
-	color: blue;
+#logos {
+	text-align: center;
 }
 
-article a:active, footer a:active {
-	text-decoration: underline;
-}
-
-article a:hover, footer a:hover {
-	background-color: blue;
-	color: white;
-	text-decoration: underline;
-}
-
-.logo {
+#logos a {
 	display: inline-block;
-	width: 20ch;
-	height: 20ch;
+	width: 18ch;
+	height: 18ch;
 	text-align: center;
 	vertical-align: text-top;
 	padding: 1ex;
-	margin: 1ex;
-	color: black;
+	margin: 0;
 }
 
-.logo figcaption {
+#logos li:before {
+	content: none;
+}
+
+#logos figcaption {
 	display: block;
 	height: 10ch;
 }
 
-.logo img {
+#logos img {
 	display: inline-block;
 	width: 8ch;
 	height: 8ch;
 	background-color: white;
 	padding: 1ex;
-}
-
-footer {
 }
