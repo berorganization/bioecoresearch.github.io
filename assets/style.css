@@ -64,25 +64,31 @@
 }
 
 * {
-	font-family: inherit;
-	font-size: inherit;
-	font-weight: inherit;
-	line-height: inherit;
-	text-decoration: inherit;
+	background-color: none;
+	background: none;
+	color: inherit;
 	margin: 0px;
 	padding: 0px;
 	border: 0px;
-	background: none;
-	color: inherit;
 	outline: none;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	text-decoration: inherit;
+	line-height: inherit;
+}
+
+::selection {
+	background-color: blue;
+	color: white;
 }
 
 html {
-	background-color: #efefef;
+	background-color: white;
 	color: black;
 	font-family: webmono;
 	font-weight: 400;
-	font-size: 12pt;
+	font-size: 11pt;
 	line-height: 150%;
 }
 
@@ -93,29 +99,30 @@ body {
 	margin-right: auto;
 	padding-top: 0px;
 	padding-bottom: 2ex;
+	padding-left: 2ex;
+	padding-right: 2ex;
+	font-weight: 300;
 }
 
 header {
-	background-image: url("./header.png");
-	background-color: black;
-	background-size: 100% 100%;
-	padding-left: 2ch;
-	padding-right: 2ch;
-	padding-top: 3ch;
-	padding-bottom: 3ch;
+	text-align: center;
+	background-color: navy;
+	color: white;
 }
 
 header h1 {
-	color: white;
-	font-size: 125%;
+	display: inline-block;
+	padding-top: 2ch;
+	padding-bottom: 2ch;
+	padding-left: 2ch;
+	padding-right: 2ch;
+	font-size: 150%;
 	font-weight: 700;
-	text-shadow: 1px 1px 0 black,
-			1px 1px 2px black,
-			1px 1px 3px black;
 }
 
 a {
 	color: blue;
+	font-weight: bolder;
 }
 
 a:active {
@@ -132,33 +139,56 @@ a:focus {
 	text-decoration: underline;
 }
 
+header a {
+	color: white;
+}
+
+header a:hover {
+	background-color: transparent;
+	color: white;
+}
+
 article {
-	border-bottom-color: black;
 	border-bottom-style: dashed;
+	border-bottom-color: black;
 	border-bottom-width: 0.1ex;
 	margin-bottom: 2ex;
 	padding-bottom: 2ex;
-	padding-left: 2ch;
-	padding-right: 2ch;
+	min-height: 160ex;
 }
 
 article h1 {
 	font-weight: 700;
 	font-style: oblique;
 	margin-top: 2ex;
-	margin-bottom: 2ex;
-	border-bottom: 0.3ex solid black;
+	margin-bottom: 1ex;
+	border-bottom-style: solid;
+	border-bottom-color: black;
+	border-bottom-width: 0.3ex;
 }
 
 article h2 {
 	font-weight: 500;
 	margin-top: 2ex;
-	margin-bottom: 2ex;
+	margin-bottom: 1ex;
 }
 
 article p {
-	font-weight: 300;
 	margin-bottom: 1ex;
+}
+
+article nav {
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-top: 1ch;
+	margin-bottom: 1ch;
+}
+
+article nav a {
+	display: inline-block;
+	padding-left: 1ch;
+	padding-right: 1ch;
 }
 
 article u {
@@ -193,7 +223,7 @@ article ul li span {
 	text-align: center;
 }
 
-footer {
-	padding-left: 2ch;
-	padding-right: 2ch;
+#logos a {
+	padding-left: 1ch;
+	padding-right: 1ch;
 }
